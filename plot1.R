@@ -1,8 +1,10 @@
+library(dplyr)
+
 Source_Classification_Code <- read.table("C:/Users/hizba/Downloads/exdata_data_NEI_data/Source_Classification_Code.rds", header=TRUE, quote="\"")
 View(Source_Classification_Code)
 summarySCC_PM25 <- read.table("C:/Users/hizba/Downloads/exdata_data_NEI_data/summarySCC_PM25.rds", header=TRUE, quote="\"")
 View(summarySCC_PM25)
-library(dplyr)
+
 NEI <- readRDS("summarySCC_PM25.rds")
 SCC <- readRDS("Source_Classification_Code.rds")
 
